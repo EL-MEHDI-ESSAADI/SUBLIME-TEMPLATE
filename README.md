@@ -14,6 +14,6 @@
  I am proud of this work, I hope you like it.
 
 ## Links
- - the web site of my version template : https://keen-goodall-57645c.netlify.app/
+ - the web site of my template version : https://keen-goodall-57645c.netlify.app/
  - The link of the original template is https://www.styleshout.com/free-templates/sublime/
 
