@@ -1,0 +1,163 @@
+.contact {
+  padding-top: 16.2rem;
+  padding-bottom: 21rem;
+  background-color: #5e3080;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+
+  @media only screen and (max-width: 1000px) {
+    padding-top: 15rem;
+    padding-bottom: 19.8rem;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-top: 12rem;
+    padding-bottom: 13.2rem;
+  }
+
+  .container {
+    max-width: 1200px;
+
+    .section_header {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+
+      h3 {
+        color: #2a1538;
+      }
+      p {
+        // i should do margin bottom
+        margin-bottom: 13.8rem;
+
+        @media (max-width: 800px) {
+          margin-bottom: 13.5rem;
+        }
+        @media (max-width: 600px) {
+          margin-bottom: 11.4rem;
+        }
+        @media (max-width: 400px) {
+          margin-bottom: 8.7rem;
+        }
+        span {
+          display: block;
+          @media (max-width: 500px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .contact_info {
+      font-family: "Nunito Sans", sans-serif;
+      .email {
+        margin-bottom: 3.6rem;
+        a {
+          font-size: 9rem;
+          font-weight: 700;
+          line-height: 1.2;
+          border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+          width: fit-content;
+          margin: auto;
+          transition: $main-tansition;
+          @media only screen and (max-width: 1200px) {
+            font-size: 7.6rem;
+          }
+          @media only screen and (max-width: 1000px) {
+            font-size: 7.2rem;
+          }
+          @media only screen and (max-width: 900px) {
+            font-size: 6.2rem;
+          }
+          @media only screen and (max-width: 800px) {
+            font-size: 5.5rem;
+          }
+          @media only screen and (max-width: 700px) {
+            font-size: 3.8rem;
+          }
+          @media only screen and (max-width: 500px) {
+            font-size: 3rem;
+          }
+          @media only screen and (max-width: 400px) {
+            font-size: 2.5rem;
+          }
+  
+          &:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+      .address {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 3.3rem;
+        line-height: 1.636;
+        @media only screen and (max-width: 1200px) {
+          font-size: 3.1rem;
+        }
+        @media only screen and (max-width: 1000px) {
+          font-size: 3rem;
+        }
+        @media only screen and (max-width: 900px) {
+          font-size: 2.8rem;
+        }
+        @media only screen and (max-width: 800px) {
+          font-size: 2.6rem;
+        }
+        @media only screen and (max-width: 700px) {
+          font-size: 2.4rem;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 2.1rem;
+        }
+        @media only screen and (max-width: 500px) {
+          font-size: 1.8rem;
+        }
+        @media only screen and (max-width: 400px) {
+          font-size: 1.6rem;
+        }
+      }
+      ul {
+        font-size: 4.2rem;
+        margin: 4.2rem 0 0 0;
+        @media only screen and (max-width: 900px) {
+          font-size: 4rem;
+        }
+        @media only screen and (max-width: 800px) {
+          font-size: 3.5rem;
+        }
+        @media only screen and (max-width: 700px) {
+          font-size: 3.2rem;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 3rem;
+        }
+        @media only screen and (max-width: 400px) {
+          margin: 3rem 0 0 0;
+          font-size: 2.4rem;
+        }
+  
+        li {
+          margin-right: 15px;
+          display: inline-block;
+        }
+        li:last-of-type {
+          margin: 0;
+          a {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .overlay {
+    z-index: -1;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+
+    div,
+    &::after,
+    &::before {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+  }
+}

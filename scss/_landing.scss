@@ -1,0 +1,500 @@
+.landing {
+  width: 100%;
+  // ila 100vh kbra men 786 kiyakhodha ila kan sghar kiyakhod 786px
+  height: 100vh;
+  min-height: 786px;
+  position: relative;
+  display: grid;
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 0.3) 50%
+      ),
+      url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  .overlay {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 89%;
+    max-width: 1200px;
+    height: 100%;
+    opacity: 0.5;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    @media only screen and (max-width: 1600px) {
+      border-right: none;
+      border-left: none;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      left: 25%;
+      background-color: rgba(255, 255, 255, 0.1);
+      @media only screen and (max-width: 1600px) {
+        left: 22.5%;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      right: 25%;
+      background-color: rgba(255, 255, 255, 0.1);
+      @media only screen and (max-width: 1600px) {
+        right: 22.5%;
+      }
+    }
+  }
+
+  .landing-content {
+    position: relative;
+    padding-top: 66px;
+    display: flex;
+    align-items: center;
+    @media (max-width: 1200px) {
+      padding-top: 45px;
+    }
+    @media (max-width: 600px) {
+      padding-top: 60px;
+    }
+
+    .main_content {
+      width: 100%;
+      text-align: center;
+
+      .main_text {
+        h1 {
+          font-weight: 700;
+          font-size: 180px;
+          line-height: 1;
+          letter-spacing: -0.02em;
+          text-transform: capitalize;
+          @media only screen and (max-width: 1600px) {
+            font-size: 170px;
+          }
+          @media only screen and (max-width: 1400px) {
+            font-size: 160px;
+          }
+          @media only screen and (max-width: 1200px) {
+            font-size: 140px;
+          }
+          @media only screen and (max-width: 1000px) {
+            font-size: 130px;
+          }
+          @media only screen and (max-width: 900px) {
+            font-size: 120px;
+          }
+          @media only screen and (max-width: 800px) {
+            font-size: 114px;
+          }
+          @media only screen and (max-width: 700px) {
+            font-size: 102px;
+          }
+          @media only screen and (max-width: 600px) {
+            font-size: 90px;
+          }
+          @media only screen and (max-width: 500px) {
+            font-size: 75px;
+          }
+          @media only screen and (max-width: 400px) {
+            font-size: 65px;
+          }
+          @media only screen and (max-width: 350px) {
+            font-size: 62px;
+          }
+        }
+        h3 {
+          margin-top: 12px;
+          font-size: 38px;
+          line-height: 1.342;
+          color: #9c9c9c;
+          font-weight: 300;
+          font-family: "Nunito Sans", sans-serif;
+          margin-bottom: 18px;
+
+          @media only screen and (max-width: 1600px) {
+            font-size: 37px;
+          }
+          @media only screen and (max-width: 1400px) {
+            font-size: 36px;
+          }
+          @media only screen and (max-width: 1200px) {
+            font-size: 32px;
+          }
+          @media only screen and (max-width: 1000px) {
+            font-size: 30px;
+          }
+          @media only screen and (max-width: 900px) {
+            font-size: 27px;
+          }
+          @media only screen and (max-width: 800px) {
+            font-size: 26px;
+          }
+          @media only screen and (max-width: 700px) {
+            font-size: 24px;
+          }
+          @media only screen and (max-width: 600px) {
+            font-size: 21px;
+          }
+          @media only screen and (max-width: 500px) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .play_icon {
+        cursor: pointer;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 42px;
+        @media only screen and (max-width: 800px) {
+          margin-top: 36px;
+        }
+        @media only screen and (max-width: 600px) {
+          margin-top: 30px;
+        }
+
+        &:hover {
+          .icon-container .text_icon {
+            color: white;
+          }
+          .icon-container .icon {
+            background-color: #6b3792;
+          }
+        }
+
+        input {
+          display: none;
+          &:checked + label {
+            .video {
+              display: flex;
+              animation: for-iframe 0.5s ease forwards;
+            }
+          }
+        }
+        .icon-container {
+          cursor: pointer;
+          display: block;
+          @media (max-width: 1199px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .icon {
+            transition: $main-tansition;
+            display: inline-block;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: $secondary-color;
+            background-image: url(../images/icons/icon-play.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24px 27px;
+            background-position: 55% center;
+            margin-right: 20px;
+            @media (min-width: 1200px) {
+              margin-bottom: 10px;
+            }
+            @media (min-width: 1200px) {
+              margin-right: 0px;
+            }
+            @media (max-width: 1400px) {
+              width: 84px;
+              height: 84px;
+              background-size: 22px 24px;
+            }
+            @media (max-width: 1200px) {
+              width: 66px;
+              height: 66px;
+              background-size: 12px 13px;
+            }
+            @media (max-width: 800px) {
+              width: 60px;
+              height: 60px;
+            }
+            @media (max-width: 400px) {
+              width: 54px;
+              height: 54px;
+            }
+          }
+
+          .video {
+            cursor: initial;
+            display: none;
+            position: fixed;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            z-index: 20;
+            background-color: #151515;
+            transition: $main-tansition;
+            top: 0;
+            left: 0;
+            label {
+              cursor: pointer;
+              position: absolute;
+              width: 42px;
+              height: 42px;
+              right: 20px;
+              top: 20px;
+
+              &:hover {
+                span {
+                  background-color: $secondary-color;
+                }
+              }
+              .close {
+                display: block;
+                margin: auto;
+                position: absolute;
+                height: 2px;
+                width: 20px;
+                background-color: white;
+                border-radius: 11px;
+                top: 20px;
+                left: 11px;
+                transition: $main-tansition;
+              }
+              .close_one {
+                transform: rotate(45deg);
+              }
+              .close_two {
+                transform: rotate(-45deg);
+              }
+            }
+            iframe {
+              width: 98%;
+              height: 80%;
+            }
+          }
+
+          .text_icon {
+            transition: $main-tansition;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 1;
+            color: #9c9c9c;
+            letter-spacing: 5px;
+            @media only screen and (max-width: 800px) {
+              font-size: 12px;
+              line-height: 60px;
+            }
+            @media only screen and (max-width: 400px) {
+              line-height: 54px;
+              font-size: 11px;
+            }
+          }
+        }
+      }
+
+      .buttons {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: 78px;
+        @media only screen and (max-width: 1200px) {
+          margin-top: 72px;
+        }
+        @media only screen and (max-width: 800px) {
+          margin-top: 66px;
+        }
+        @media only screen and (max-width: 600px) {
+          position: static;
+          margin-top: 48px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: initial;
+        }
+        @media only screen and (max-width: 400px) {
+          margin-top: 36px;
+        }
+
+        a {
+          width: 300px;
+          height: 72px;
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: 700;
+          font-size: 12px;
+          letter-spacing: 4px;
+          cursor: pointer;
+          transition: $main-tansition;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media (max-width: 1200px) {
+            font-size: 11px;
+            height: 66px;
+            width: 280px;
+          }
+          @media (max-width: 1000px) {
+            width: 240px;
+          }
+          @media (max-width: 800px) {
+            width: 220px;
+          }
+          @media (max-width: 600px) {
+            width: 100%;
+            max-width: 320px;
+            max-height: 60px;
+            margin-bottom: 12px;
+          }
+        }
+        .first_button {
+          background-color: $secondary-color;
+          &:hover {
+            background-color: #6b3792;
+          }
+        }
+        .second_button {
+          background-color: #13161b;
+          &:hover {
+            background-color: #080a0c;
+          }
+        }
+      }
+    }
+
+    .social {
+      position: absolute;
+      bottom: 36px;
+      left: 0;
+      z-index: 2;
+      font-family: "Nunito Sans", sans-serif;
+      @media only screen and (max-width: 900px) {
+        display: none;
+      }
+      li {
+        padding: 6px 0;
+        position: relative;
+
+        &:hover {
+          span {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+        span {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          left: calc(100% + 8px);
+          top: 6px;
+          transform: scale(0);
+          opacity: 0;
+          transition: $main-tansition;
+          transition-duration: 0.5s;
+          transform-origin: left center;
+
+          &::after {
+            content: attr(data-content);
+            background-color: black;
+            font-size: 12px;
+            padding: 0 15px;
+            border-radius: 3px;
+            font-family: "Nunito Sans", sans-serif;
+            line-height: 30px;
+          }
+          &::before {
+            content: "";
+            border-width: 6px;
+            border-style: solid;
+            border-color: transparent black transparent transparent;
+          }
+        }
+      }
+      a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+
+        i {
+          font-size: 15px;
+          text-align: center;
+          vertical-align: middle;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+        }
+      }
+    }
+    .scroll {
+      position: absolute;
+      right: 0;
+      bottom: 54px;
+      transform: translateX(100%) rotate(-90deg);
+      transform-origin: left bottom;
+      @media only screen and (max-width: 700px) {
+        bottom: 48px;
+      }
+
+      a {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 3.5px;
+        transition: $main-tansition;
+        position: relative;
+        @media (max-width: 1200px) {
+          font-size: 11px;
+        }
+
+        &:hover {
+          color: $secondary-color;
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          background-color: rgba(255, 255, 255, 0.08);
+          width: 150px;
+          height: 1px;
+          top: 50%;
+          transform: translateY(-50%);
+          left: calc(100% + 30px);
+
+          @media (max-width: 885px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes for-iframe {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  10% {
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}

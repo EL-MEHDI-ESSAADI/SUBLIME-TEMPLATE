@@ -1,0 +1,101 @@
+.clients {
+  background-color: #0f0f0f;
+  text-align: center;
+  position: relative;
+  padding-top: 16.2rem;
+  padding-bottom: 15rem;
+  z-index: 0;
+  @media only screen and (max-width: 1000px) {
+    padding-top: 15rem;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-top: 12rem;
+    padding-bottom: 10.2rem;
+  }
+
+  .min_container {
+    position: relative;
+    z-index: 2;
+  }
+  .container {
+    max-width: 1200px;
+    .section_header {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1000px;
+
+      p {
+        margin-bottom: 10.8rem;
+        @media (max-width: 800px) {
+          margin-bottom: 8.1rem;
+        }
+        @media (max-width: 600px) {
+          margin-bottom: 10.2rem;
+        }
+        @media (max-width: 500px) {
+          margin-bottom: 5.7rem;
+        }
+      }
+    }
+    .clients_name {
+      margin-bottom: 3rem;
+      font-family: "Nunito Sans", sans-serif;
+      ul {
+        display: flex;
+        font-weight: 700;
+        font-size: 4.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media only screen and (max-width: 1000px) {
+          font-size: 4.2rem;
+        }
+        @media only screen and (max-width: 900px) {
+          font-size: 4rem;
+        }
+        @media only screen and (max-width: 800px) {
+          font-size: 3.4rem;
+        }
+        @media only screen and (max-width: 600px) {
+          font-size: 3rem;
+        }
+        @media only screen and (max-width: 500px) {
+          font-size: 2.4rem;
+        }
+        @media only screen and (max-width: 400px) {
+          font-size: 2.1rem;
+        }
+
+        li {
+          padding: 0 1.5rem;
+          @media only screen and (max-width: 500px) {
+            padding: 0 1rem;
+          }
+          @media only screen and (max-width: 400px) {
+            padding: 0 0.6rem;
+          }
+
+          a {
+            color: rgba(255, 255, 255, 0.15);
+            transition: $main-tansition;
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  .overlay {
+    z-index: -1;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+
+    div,
+    &::after,
+    &::before {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+}

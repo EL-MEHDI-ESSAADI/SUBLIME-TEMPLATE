@@ -1,0 +1,87 @@
+.about {
+  .container {
+    .header_section {
+
+      p:first-of-type {
+        margin-bottom: 4.8rem;
+
+        @media (max-width: 800px) {
+          margin-bottom: 4.5rem;
+        }
+
+        @media (max-width: 600px) {
+          margin-bottom: 4.2rem;
+        }
+      }
+      p:last-of-type {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 300;
+        font-size: 2.4rem;
+        line-height: 1.625;
+        color: rgba(255, 255, 255, 0.2);
+
+        @media only screen and (max-width: 800px) {
+          font-size: 2rem;
+        }
+
+        @media only screen and (max-width: 1000px) {
+          font-size: 2.1rem;
+        }
+        @media only screen and (max-width: 1200px) {
+          font-size: 2.2rem;
+        }
+      }
+    }
+    .processes {
+      margin-top: 10.2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+
+      @media (min-width: 1000px) {
+        gap: 6rem;
+      }
+      @media (max-width: 800px) {
+        grid-template-columns: 1fr;
+      }
+      .process {
+        counter-increment: numbers;
+
+        div {
+          font-size: 2.4rem;
+          line-height: 1.5;
+          margin-bottom: 2.1rem;
+          font-weight: 600;
+          @media only screen and (max-width: 400px) {
+            font-size: 2.1rem;
+          }
+
+          &::before {
+            content: counter(numbers);
+            background-color: #793ea5;
+            display: inline-block;
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            font-size: 2.1rem;
+            font-weight: 700;
+            text-align: center;
+            line-height: 48px;
+            margin-right: 2.2rem;
+            @media (max-width: 600px) {
+              margin-right: 12px;
+            }
+            @media (max-width: 400px) {
+              margin-right: 10px;
+            }
+          }
+        }
+        p {
+          color: rgba(255, 255, 255, 0.3);
+          font-size: 1.7rem;
+          font-family: "Nunito Sans", sans-serif;
+        }
+      }
+    }
+  }
+}
