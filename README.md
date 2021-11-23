@@ -7,13 +7,13 @@
  and much more. The template is primarily designed for creative agencies but it is versatile enough 
  to be used for other purposes like a landing page for your startup or business website.
 
-### What I Do
+### What I Do (Sep 23, 2021)
  This is my version of sublime template, 
  I worked with psd file of the template and also I taked some Measurements from https://www.styleshout.com/templates/preview/Sublime10/  
  I used only CSS & HTML.
  I am proud of this work, I hope you like it.
- ### Adding js in 11/23/2021
- I complet my project with adding js files, now the site هس more interactive
+ ### Update the project (Nov 23, 2021)
+ I complet my project with adding js files, now the site is more interactive
 
 ## Links
  - the web site of my template version : https://keen-goodall-57645c.netlify.app/
