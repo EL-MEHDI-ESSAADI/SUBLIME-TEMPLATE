@@ -13,7 +13,7 @@
  I used only CSS & HTML.
  I am proud of this work, I hope you like it.
  ### Adding js in 11/23/2021
- I add js files to my project
+ I complet my project with adding js files, now the site هس more interactive
 
 ## Links
  - the web site of my template version : https://keen-goodall-57645c.netlify.app/
