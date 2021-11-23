@@ -12,6 +12,8 @@
  I worked with psd file of the template and also I taked some Measurements from https://www.styleshout.com/templates/preview/Sublime10/  
  I used only CSS & HTML.
  I am proud of this work, I hope you like it.
+ ### Adding js in 11/23/2021
+ I add js files to my project
 
 ## Links
  - the web site of my template version : https://keen-goodall-57645c.netlify.app/
