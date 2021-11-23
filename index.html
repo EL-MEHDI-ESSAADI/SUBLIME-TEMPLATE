@@ -35,59 +35,71 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- start preloader -->
+    <div class="preloader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- end preloader -->
     <!-- start header -->
     <header>
       <div class="header_content first_container">
         <a href="#"><img src="images/logo.svg" alt="this is logo" /></a>
         <nav>
-          <input id="for-label" type="checkbox" role="button" />
-          <label for="for-label">
+          <div class="open-button">
             <span class="open"></span>
             <span class="open"></span>
             <span class="open"></span>
-          </label>
+          </div>
           <div class="nav_content">
             <div class="content_container">
-              <div class="nav_header">Navigate to</div>
-              <label class="close-label" for="for-label">
+              <div class="inner_content_container">
+                <div class="nav_header">Navigate to</div>
+                <ul class="ul-one">
+                  <li><a href="#landing">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#works">Works</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <p>
+                  Perspiciatis hic praesentium nesciunt. Et neque a dolorum
+                  <span>voluptatem</span> porro iusto sequi veritatis libero
+                  enim. Iusto id suscipit veritatis neque reprehenderit.
+                </p>
+                <ul class="ul-two">
+                  <li>
+                    <a class="inherit" href="#"
+                      ><i class="fab fa-facebook-square"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="inherit" href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="inherit" href="#"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="inherit" href="#"
+                      ><i class="fab fa-behance"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="inherit" href="#"
+                      ><i class="fab fa-dribbble"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="close-button">
                 <span class="close close_one"></span>
                 <span class="close close_two"></span>
-              </label>
-              <ul class="ul-one">
-                <li><a href="#landing">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-              <p>
-                Perspiciatis hic praesentium nesciunt. Et neque a dolorum
-                <span>voluptatem</span> porro iusto sequi veritatis libero enim.
-                Iusto id suscipit veritatis neque reprehenderit.
-              </p>
-              <ul class="ul-two">
-                <li>
-                  <a class="inherit" href="#"
-                    ><i class="fab fa-facebook-square"></i
-                  ></a>
-                </li>
-                <li>
-                  <a class="inherit" href="#"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a class="inherit" href="#"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a class="inherit" href="#"><i class="fab fa-behance"></i></a>
-                </li>
-                <li>
-                  <a class="inherit" href="#"
-                    ><i class="fab fa-dribbble"></i
-                  ></a>
-                </li>
-              </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -103,21 +115,20 @@
             <h3>We build brands and beautiful experiences</h3>
           </div>
           <div class="play_icon">
-            <input type="checkbox" name="" id="icon-button" role="button" />
-            <label class="icon-container" for="icon-button">
+            <div class="icon-container" role="button">
               <div class="icon"></div>
               <div class="video">
-                <label for="icon-button" class=".icon-container">
+                <div class="clossVideo-btn">
                   <span class="close close_one"></span>
                   <span class="close close_two"></span>
-                </label>
+                </div>
                 <iframe
                   src="https://player.vimeo.com/video/117310401?autoplay=1&color=01aef0&title=0&byline=0&portrait=0"
                   frameborder="0"
                 ></iframe>
               </div>
               <div class="text_icon">WATCH VIDEO</div>
-            </label>
+            </div>
           </div>
           <div class="buttons">
             <a href="#about" class="first_button">MORE ABOUT US</a>
@@ -159,13 +170,15 @@
       <div class="container">
         <div class="min_container">
           <div class="header_section">
-            <h3 class="h3_title_section">WHO WE ARE</h3>
-            <p class="big_paragraph">
-              We are Sublime, a design and branding agency with partners
-              worldwide. We design thoughtful digital experiences and beautiful
-              brand aesthetics.
-            </p>
-            <p>
+            <div class="anm-int">
+              <h3 class="h3_title_section">WHO WE ARE</h3>
+              <p class="big_paragraph">
+                We are Sublime, a design and branding agency with partners
+                worldwide. We design thoughtful digital experiences and
+                beautiful brand aesthetics.
+              </p>
+            </div>
+            <p class="small_P anm-int">
               Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
               Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit
               amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -176,7 +189,7 @@
             </p>
           </div>
           <div class="processes">
-            <div class="process">
+            <div class="process anm-int">
               <div>Define</div>
               <p>
                 Quos dolores saepe mollitia deserunt accusamus autem
@@ -186,7 +199,7 @@
                 quasi deserunt ab.
               </p>
             </div>
-            <div class="process">
+            <div class="process anm-int">
               <div>Design</div>
               <p>
                 Quos dolores saepe mollitia deserunt accusamus autem
@@ -196,7 +209,7 @@
                 quasi deserunt ab.
               </p>
             </div>
-            <div class="process">
+            <div class="process anm-int">
               <div>Build</div>
               <p>
                 Quos dolores saepe mollitia deserunt accusamus autem
@@ -206,7 +219,7 @@
                 quasi deserunt ab.
               </p>
             </div>
-            <div class="process">
+            <div class="process anm-int">
               <div>Launch</div>
               <p>
                 Quos dolores saepe mollitia deserunt accusamus autem
@@ -225,7 +238,7 @@
     <div class="services section_padding" id="services">
       <div class="container">
         <div class="min_container">
-          <div class="header_section">
+          <div class="header_section anm-int">
             <h3 class="h3_title_section">WHAT WE DO</h3>
             <p class="big_paragraph">
               We take pride in what we do. Our services are designed to help
@@ -234,7 +247,7 @@
             </p>
           </div>
           <div class="services-list">
-            <div class="service">
+            <div class="service anm-int">
               <div class="serv_icon"><i class="far fa-star"></i></div>
               <div class="serv_text_container">
                 <div>Brand Identity</div>
@@ -246,7 +259,7 @@
                 </p>
               </div>
             </div>
-            <div class="service">
+            <div class="service anm-int">
               <div class="serv_icon"><i class="fas fa-vector-square"></i></div>
               <div class="serv_text_container">
                 <div>Illustration</div>
@@ -258,7 +271,7 @@
                 </p>
               </div>
             </div>
-            <div class="service">
+            <div class="service anm-int">
               <div class="serv_icon"><i class="far fa-chart-bar"></i></div>
               <div class="serv_text_container">
                 <div>Marketing</div>
@@ -270,7 +283,7 @@
                 </p>
               </div>
             </div>
-            <div class="service">
+            <div class="service anm-int">
               <div class="serv_icon"><i class="far fa-image"></i></div>
               <div class="serv_text_container">
                 <div>Photography</div>
@@ -282,7 +295,7 @@
                 </p>
               </div>
             </div>
-            <div class="service">
+            <div class="service anm-int">
               <div class="serv_icon"><i class="fab fa-codepen"></i></div>
               <div class="serv_text_container">
                 <div>UI/UX Design</div>
@@ -294,7 +307,7 @@
                 </p>
               </div>
             </div>
-            <div class="service">
+            <div class="service anm-int">
               <div class="serv_icon"><i class="fab fa-connectdevelop"></i></div>
               <div class="serv_text_container">
                 <div>Frontend Design</div>
@@ -313,7 +326,7 @@
     <!-- end services -->
     <!-- start works -->
     <div class="works section_padding" id="works">
-      <div class="container">
+      <div class="container anm-int">
         <div class="min_container">
           <h3 class="h3_title_section">OUR WORKS</h3>
           <p class="big_paragraph">
@@ -325,7 +338,7 @@
       <div class="container">
         <div class="works_list">
           <div class="first_list list">
-            <div class="work_item">
+            <div class="work_item anm-int">
               <a href="#"><i class="fas fa-link"></i></a>
               <img src="images/portfolio/lady-shutterbug@2x.jpg" alt="" />
               <div class="img_caption">
@@ -333,7 +346,7 @@
                 <p>Branding</p>
               </div>
             </div>
-            <div class="work_item">
+            <div class="work_item anm-int">
               <a href="#"><i class="fas fa-link"></i></a>
               <img src="images/portfolio/the-beetle@2x.jpg" alt="" />
               <div class="img_caption">
@@ -341,7 +354,7 @@
                 <p>Web Development</p>
               </div>
             </div>
-            <div class="work_item">
+            <div class="work_item anm-int">
               <a href="#"><i class="fas fa-link"></i></a>
               <img src="images/portfolio/lamp@2x.jpg" alt="" />
               <div class="img_caption">
@@ -351,7 +364,7 @@
             </div>
           </div>
           <div class="second_list list">
-            <div class="work_item">
+            <div class="work_item anm-int">
               <a href="#"><i class="fas fa-link"></i></a>
               <img src="images/portfolio/woodcraft@2x.jpg" alt="" />
               <div class="img_caption">
@@ -359,7 +372,7 @@
                 <p>Web Design</p>
               </div>
             </div>
-            <div class="work_item">
+            <div class="work_item anm-int">
               <a href="#"><i class="fas fa-link"></i></a>
               <img src="images/portfolio/salad@2x.jpg" alt="" />
               <div class="img_caption">
@@ -367,7 +380,7 @@
                 <p>Branding</p>
               </div>
             </div>
-            <div class="work_item">
+            <div class="work_item anm-int">
               <a href="#"><i class="fas fa-link"></i></a>
               <img src="images/portfolio/fuji@2x.jpg" alt="" />
               <div class="img_caption">
@@ -384,11 +397,11 @@
     <div class="clients" id="clients">
       <div class="container">
         <div class="min_container">
-          <div class="section_header">
+          <div class="section_header anm-int">
             <h3 class="h3_title_section">OUR CLIENTS</h3>
             <p class="big_paragraph">Who we have work with</p>
           </div>
-          <div class="clients_name">
+          <div class="clients_name anm-int">
             <ul>
               <li><a href="#">Uber</a></li>
               <li><a href="#">Spotify</a></li>
@@ -413,22 +426,61 @@
     <!-- end clients -->
     <!-- start testimonials -->
     <div class="testimonials" id="testimonials">
-      <div class="container">
-        <div class="min_container">
-          <div class="icon"></div>
-          <p class="testimonial">
-            Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-            Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.
+      <div class="container anm-int">
+        <div style="overflow: hidden">
+          <div class="slidesContainer">
+            <div class="slide">
+              <div class="min_container">
+                <div class="icon"></div>
+                <p class="testimonial">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
+                  officia voluptatibus libero dolore saepe suscipit voluptatum
+                  perspiciatis voluptatem magnam amet ullam voluptas, blanditiis
+                  corporis laudantium magni qui sunt?
+                </p>
+                <div class="author">
+                  <div>Sundar Pichai</div>
+                  <p>CEO, Google</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="min_container">
+                <div class="icon"></div>
+                <p class="testimonial">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Fugiat ut officia, id cupiditate delectus, alias atque ullam
+                  ex repellat est modi totam doloribus ipsa nam tempora ipsum
+                  maxime?
+                </p>
+                <div class="author">
+                  <div>Bob Vanor</div>
+                  <p>CEO, Facebook</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="min_container">
+                <div class="icon"></div>
+                <p class="testimonial">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  repudiandae consequatur, maxime dolor, rerum pariatur
+                  excepturi vel et voluptates velit nihil exercitationem! Sint
+                  nostrum facere ab iusto veritatis?
+                </p>
+                <div class="author">
+                  <div>Von Mehdi</div>
+                  <p>Software Developer, Microsoft</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="author">
-            <div>Sundar Pichai</div>
-            <p>CEO,  Google</p>
-          </div>
-          <div class="shufel">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+        </div>
+
+        <div class="shufel">
+          <span data-index="0"></span>
+          <span class="active" data-index="1"></span>
+          <span data-index="2"></span>
         </div>
       </div>
     </div>
@@ -437,38 +489,37 @@
     <div class="contact" id="contact">
       <div class="container">
         <div class="min_container">
-          <div class="section_header">
+          <div class="section_header anm-int">
             <h3 class="h3_title_section">KEEP IN TOUCH</h3>
-            <p class="big_paragraph">Feel free to contact us for any <span></span> project idea or collaboration</p>
+            <p class="big_paragraph">
+              Feel free to contact us for any <span></span> project idea or
+              collaboration
+            </p>
           </div>
-          <div class="contact_info">
-            <div class="email"><a href="mailto:sayhello@sublime.com">sayhello@sublime.com</a></div>
+          <div class="contact_info anm-int">
+            <div class="email">
+              <a href="mailto:sayhello@sublime.com">sayhello@sublime.com</a>
+            </div>
             <div class="address">
-              1600 Amphitheatre Parkway <br>  
-              Mountain View, CA, 94043 US <br>
+              1600 Amphitheatre Parkway <br />
+              Mountain View, CA, 94043 US <br />
               +1 &#40;917&#41; 123 456 &ThinSpace; +1 &#40;917&#41; 333 987
             </div>
-            <ul >
+            <ul>
               <li>
-                <a  href="#"
-                  ><i class="fab fa-facebook-square"></i
-                ></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
               </li>
               <li>
-                <a  href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
               </li>
               <li>
-                <a  href="#"
-                  ><i class="fab fa-instagram"></i
-                ></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
               </li>
               <li>
-                <a  href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
               </li>
               <li>
-                <a  href="#"
-                  ><i class="fab fa-dribbble"></i
-                ></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
               </li>
             </ul>
           </div>
@@ -485,16 +536,18 @@
         <div class="min_container">
           <div class="button">
             <a href="#landing">
-              <span></span> 
+              <span></span>
               BACK TO TOP
             </a>
           </div>
           <div class="footer_info">
-            &copy; Copyright Sublime 2018 <span class="point"></span>  Design by <a href="https://www.styleshout.com/" target="_blank">Styleshout</a>
+            &copy; Copyright Sublime 2018 <span class="point"></span> Design by
+            <a href="https://www.styleshout.com/" target="_blank">Styleshout</a>
           </div>
         </div>
       </div>
     </div>
     <!-- end footer -->
+    <script src="main.js"></script>
   </body>
 </html>
