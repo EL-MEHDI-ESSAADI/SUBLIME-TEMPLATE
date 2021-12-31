@@ -16,6 +16,6 @@
  I complet my project with adding js files, now the site is more interactive
 
 ## Links
- - the web site of my template version : https://keen-goodall-57645c.netlify.app/
+ - the web site of my template version : https://sublime-template-by-von.netlify.app/
  - The link of the original template is https://www.styleshout.com/free-templates/sublime/
 
