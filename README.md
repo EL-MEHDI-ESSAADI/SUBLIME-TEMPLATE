@@ -1,21 +1,22 @@
 # SUBLIME-TEMPLATE
 
 ## What Is Sublime
- SUBLIME is a Creative HTML5 one-page template designed for creative agencies , studios, digital 
- design and media agencies or other similar business by styleshout. The template is a dark theme design with 
+ [SUBLIME][original template page] is a Creative HTML5 one-page template designed for creative agencies, studios, digital 
+ design and media agencies. The template is a dark theme design with 
  features like fullscreen header/hero section, responsive video lightbox, a nice portfolio section 
- and much more. The template is primarily designed for creative agencies but it is versatile enough 
- to be used for other purposes like a landing page for your startup or business website.
+ and much more.
 
-### What I Do (Sep 23, 2021)
- This is my version of sublime template, 
- I worked with psd file of the template and also I taked some Measurements from https://www.styleshout.com/templates/preview/Sublime10/  
- I used only CSS & HTML.
- I am proud of this work, I hope you like it.
- ### Update the project (Nov 23, 2021)
- I complet my project with adding js files, now the site is more interactive
+### What I Did (Sep 23, 2021)
+ I rebult the [Sublime template][original template page], using its [psd file] and also I took some measurements from the [original template demo].<br/>
+ I used only Scss & HTML.
+ ### Add Js (Nov 23, 2021)
+ I added js files, now the site is more interactive.
 
 ## Links
- - the web site of my template version : https://sublime-template-by-von.netlify.app/
- - The link of the original template is https://www.styleshout.com/free-templates/sublime/
+ - [My version of Sublime template][my site demo]
+ - [The original version][original template demo] 
 
+[original template page]: https://www.styleshout.com/free-templates/sublime
+[original template demo]: https://www.styleshout.com/demo/?theme=sublime
+[my site demo]: https://sublime-template-by-von.netlify.app
+[psd file]: https://themeui.net/sublime-agency-portfolio-free-psd-template
