@@ -7,8 +7,7 @@
  and much more.
 
 ### What I Did (Sep 23, 2021)
- I rebult the [Sublime template][original template page], using its [psd file] and also I took some measurements from the [original template demo].<br/>
- I used only Scss & HTML.
+ I rebult the [Sublime template][original template page] with Scss and HTML, using its [psd file] and also I took some measurements from the [original template demo].
  ### Add Js (Nov 23, 2021)
  I added js files, now the site is more interactive.
 
