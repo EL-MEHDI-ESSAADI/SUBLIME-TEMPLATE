@@ -22,34 +22,4 @@ header {
     width: 155px;
     height: 36px;
   }
-  nav {
-    input[type="checkbox"] {
-      display: none;
-      
-      &:checked ~ .nav_content {
-        transform: translateX(0%);
-      }
-      &:checked ~ .nav_content  { 
-        .content_container > :not(label) {
-          left: 0;
-          opacity: 1;
-          transition: all 1s 0.5s ease-in-out;
-        }
-      }
-    }
-
-    label {
-      cursor: pointer;
-      display: block;
-      position: relative;
-      .open {
-        display: block;
-        width: 26px;
-        height: 2px;
-        margin-bottom: 6px;
-        background-color: white;
-      }
-    }
-    
-  }
 }
