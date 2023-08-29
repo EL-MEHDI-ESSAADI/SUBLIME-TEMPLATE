@@ -17,5 +17,5 @@
 
 [original template page]: https://www.styleshout.com/free-templates/sublime
 [original template demo]: https://www.styleshout.com/demo/?theme=sublime
-[my site demo]: https://sublime-template-by-von.netlify.app
+[my site demo]: https://sublime.mehdiessaadi.com
 [psd file]: https://themeui.net/sublime-agency-portfolio-free-psd-template
